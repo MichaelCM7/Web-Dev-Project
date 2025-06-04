@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Recipe - Mediterranean Quinoa Bowl</title>
+    <link rel="stylesheet" href="css/recipe_view.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">☁</div>
+                WEBSITE NAME
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="goHome()">Home</a></li>
+                    <li><a href="#" class="active" onclick="goRecipes()">Recipes</a></li>
+                    <li><a href="#" onclick="goMealPlans()">Meal Plans</a></li>
+                    <li><a href="#" onclick="goFavourites()">Favourites</a></li>
+                    <li><a href="#" onclick="goAbout()">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
+                <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Back Link -->
+        <a href="#" class="back-link" onclick="goBack()">
+            ← Back to Recipes
+        </a>
+
+        <!-- Recipe Header Card -->
+        <div class="recipe-header-card">
+            <div class="recipe-image">
+                <span>🥗</span>
+            </div>
+            <div class="recipe-details">
+                <div class="recipe-title-section">
+                    <div>
+                        <h1 class="recipe-title" id="recipeTitle">Mediterranean Quinoa Bowl</h1>
+                        <div class="recipe-calories">Calories <span id="recipeCalories">510</span> Cal</div>
+                    </div>
+                    <button class="favorite-btn" id="favoriteBtn" onclick="toggleFavorite()">♡</button>
+                </div>
+                
+                <div class="servings-section">
+                    <div class="servings-title">Adjust Servings</div>
+                    <div class="servings-control">
+                        <button class="servings-btn" onclick="decreaseServings()">-</button>
+                        <div class="servings-display">
+                            <span id="currentServings">4</span> Servings
+                        </div>
+                        <button class="servings-btn" onclick="increaseServings()">+</button>
+                    </div>
+                    <button class="add-to-plan-btn" onclick="addToPlan()">Add to Meal Plan</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingredients Section -->
+        <section class="ingredients-section">
+            <div class="ingredients-header">
+                <h2 class="ingredients-title">Ingredients</h2>
+                <div class="ingredients-adjust">Adjust for <span id="ingredientServings">4</span> servings</div>
+            </div>
+            
+            <ul class="ingredients-list" id="ingredientsList">
+                <!-- Ingredients will be populated by JavaScript -->
+            </ul>
+            
+            <button class="add-to-plan-btn" onclick="addToPlan()">Add to Meal Plan</button>
+        </section>
+
+        <!-- Instructions Section -->
+        <section class="instructions-section">
+            <h2 class="instructions-title">Instructions</h2>
+            <div class="cooking-guide">Step-by-step cooking guide</div>
+            
+            <ol class="instructions-list">
+                <li class="instruction-step">Rinse quinoa under cold water until water runs clear. Cook according to package directions and let cool.</li>
+                <li class="instruction-step">Dice cucumber, bell pepper, and red onion. Halve cherry tomatoes.</li>
+                <li class="instruction-step">In a small bowl, whisk together olive oil, lemon juice, tahini, minced garlic, salt, and pepper to make dressing.</li>
+                <li class="instruction-step">In a large bowl, combine cooked quinoa with diced vegetables.</li>
+                <li class="instruction-step">Pour dressing over quinoa mixture and toss to combine.</li>
+                <li class="instruction-step">Top with crumbled feta cheese, olives, and fresh parsley.</li>
+                <li class="instruction-step">Serve immediately or chill for 30 minutes for flavors to meld.</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <div class="logo-icon">☁</div>
+                    WEBSITE NAME
+                </div>
+                <p class="footer-description">
+                    Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Recipe Search</a></li>
+                    <li><a href="#">Meal Planning</a></li>
+                    <li><a href="#">Shopping Lists</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Email: example@gmail.com</a></li>
+                    <li><a href="#">Call: 0712 345 678</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 «Website Name». All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/recipe_view.js"></script>
+</body>
+</html>

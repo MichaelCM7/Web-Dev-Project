@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Favourite Recipes</title>
+    <link rel="stylesheet" href="css/favourites.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">☁</div>
+                WEBSITE NAME
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="goHome()">Home</a></li>
+                    <li><a href="#" onclick="goRecipes()">Recipes</a></li>
+                    <li><a href="#" onclick="goMealPlans()">Meal Plans</a></li>
+                    <li><a href="#" class="active">Favourites</a></li>
+                    <li><a href="#" onclick="goAbout()">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
+                <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Your Favourite Recipes</h1>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number" id="totalFavourites">15</div>
+                <div class="stat-label">Total Favourites</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="avgCalories">420</div>
+                <div class="stat-label">Avg Calories</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalCookTime">6.5</div>
+                <div class="stat-label">Hours of Cooking</div>
+            </div>
+        </div>
+
+        <!-- Favourites Grid -->
+        <div class="favourites-grid" id="favouritesGrid">
+            <!-- Favourite cards will be generated here -->
+        </div>
+
+        <!-- Empty State (hidden by default) -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <div class="empty-state-icon">💔</div>
+            <h2>No Favourite Recipes Yet</h2>
+            <p>Start exploring our delicious recipes and click the heart icon to save your favourites here!</p>
+            <a href="#" class="btn-browse" onclick="goRecipes()">Browse Recipes</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <div class="logo-icon">☁</div>
+                    WEBSITE NAME
+                </div>
+                <p class="footer-description">
+                    Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Recipe Search</a></li>
+                    <li><a href="#">Meal Planning</a></li>
+                    <li><a href="#">Shopping Lists</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Email: example@gmail.com</a></li>
+                    <li><a href="#">Call: 0712 345 678</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 «Website Name». All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/favourites.js"></script>
+
+</body>
+</html>

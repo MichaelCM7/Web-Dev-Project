@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Meal Planner</title>
+    <link rel="stylesheet" href="css/meal-planner.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">☁</div>
+                WEBSITE NAME
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="goHome()">Home</a></li>
+                    <li><a href="#" onclick="goRecipes()">Recipes</a></li>
+                    <li><a href="#" class="active">Meal Plans</a></li>
+                    <li><a href="#" onclick="goFavourites()">Favourites</a></li>
+                    <li><a href="#" onclick="goAbout()">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
+                <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Weekly Meal Planner</h1>
+            <button class="shopping-list-btn" onclick="getShoppingList()">Get Shopping List</button>
+        </div>
+
+        <!-- Monday -->
+        <div class="day-section">
+            <h2 class="day-title">MONDAY</h2>
+            <div class="meals-grid">
+                <div class="meal-card">
+                    <div class="meal-image">🥣</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Greek Yogurt Berry Bowl</div>
+                        <div class="meal-stats">510 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('greek-yogurt-bowl')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('monday', 'breakfast')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🥗</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Mediterranean Quinoa Salad</div>
+                        <div class="meal-stats">420 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('quinoa-salad')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('monday', 'lunch')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🐟</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Grilled Salmon & Vegetables</div>
+                        <div class="meal-stats">580 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('grilled-salmon')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('monday', 'dinner')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="day-section">
+            <h2 class="day-title">TUESDAY</h2>
+            <div class="meals-grid">
+                <div class="empty-meal-card">
+                    <div class="meal-icon">🍳</div>
+                    <div class="meal-type">Add Breakfast</div>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search for a recipe">
+                        <div class="search-icon">🔍</div>
+                    </div>
+                    <button class="browse-btn" onclick="browseRecipes('breakfast')">Browse Recipes</button>
+                    <button class="add-favorites-btn" onclick="addFromFavorites('tuesday', 'breakfast')">Add From Favourites</button>
+                </div>
+                <div class="empty-meal-card">
+                    <div class="meal-icon">🍽️</div>
+                    <div class="meal-type">Add Lunch</div>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search for a recipe">
+                        <div class="search-icon">🔍</div>
+                    </div>
+                    <button class="browse-btn" onclick="browseRecipes('lunch')">Browse Recipes</button>
+                    <button class="add-favorites-btn" onclick="addFromFavorites('tuesday', 'lunch')">Add From Favourites</button>
+                </div>
+                <div class="empty-meal-card">
+                    <div class="meal-icon">🍛</div>
+                    <div class="meal-type">Add Dinner</div>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search for a recipe">
+                        <div class="search-icon">🔍</div>
+                    </div>
+                    <button class="browse-btn" onclick="browseRecipes('dinner')">Browse Recipes</button>
+                    <button class="add-favorites-btn" onclick="addFromFavorites('tuesday', 'dinner')">Add From Favourites</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="day-section">
+            <h2 class="day-title">WEDNESDAY</h2>
+            <div class="meals-grid">
+                <div class="meal-card">
+                    <div class="meal-image">🥞</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Protein Pancakes Stack</div>
+                        <div class="meal-stats">450 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('protein-pancakes')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('wednesday', 'breakfast')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🍗</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Chicken Caesar Wrap</div>
+                        <div class="meal-stats">380 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('chicken-wrap')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('wednesday', 'lunch')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🍝</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Zucchini Pasta Primavera</div>
+                        <div class="meal-stats">340 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('zucchini-pasta')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('wednesday', 'dinner')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="day-section">
+            <h2 class="day-title">THURSDAY</h2>
+            <div class="meals-grid">
+                <div class="meal-card">
+                    <div class="meal-image">🥑</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Avocado Toast Deluxe</div>
+                        <div class="meal-stats">320 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('avocado-toast')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('thursday', 'breakfast')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🥙</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Buddha Bowl Supreme</div>
+                        <div class="meal-stats">480 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('buddha-bowl')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('thursday', 'lunch')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🍖</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Lean Beef Stir Fry</div>
+                        <div class="meal-stats">520 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('beef-stirfry')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('thursday', 'dinner')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="day-section">
+            <h2 class="day-title">FRIDAY</h2>
+            <div class="meals-grid">
+                <div class="empty-meal-card">
+                    <div class="meal-icon">🍳</div>
+                    <div class="meal-type">Add Breakfast</div>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search for a recipe">
+                        <div class="search-icon">🔍</div>
+                    </div>
+                    <button class="browse-btn" onclick="browseRecipes('breakfast')">Browse Recipes</button>
+                    <button class="add-favorites-btn" onclick="addFromFavorites('friday', 'breakfast')">Add From Favourites</button>
+                </div>
+                <div class="empty-meal-card">
+                    <div class="meal-icon">🍽️</div>
+                    <div class="meal-type">Add Lunch</div>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search for a recipe">
+                        <div class="search-icon">🔍</div>
+                    </div>
+                    <button class="browse-btn" onclick="browseRecipes('lunch')">Browse Recipes</button>
+                    <button class="add-favorites-btn" onclick="addFromFavorites('friday', 'lunch')">Add From Favourites</button>
+                </div>
+                <div class="empty-meal-card">
+                    <div class="meal-icon">🍛</div>
+                    <div class="meal-type">Add Dinner</div>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search for a recipe">
+                        <div class="search-icon">🔍</div>
+                    </div>
+                    <button class="browse-btn" onclick="browseRecipes('dinner')">Browse Recipes</button>
+                    <button class="add-favorites-btn" onclick="addFromFavorites('friday', 'dinner')">Add From Favourites</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Saturday -->
+        <div class="day-section">
+            <h2 class="day-title">SATURDAY</h2>
+            <div class="meals-grid">
+                <div class="meal-card">
+                    <div class="meal-image">🧇</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Weekend Protein Waffles</div>
+                        <div class="meal-stats">510 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('protein-waffles')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('saturday', 'breakfast')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🍕</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Cauliflower Pizza</div>
+                        <div class="meal-stats">390 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('cauliflower-pizza')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('saturday', 'lunch')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🦐</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Garlic Shrimp Linguine</div>
+                        <div class="meal-stats">620 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('shrimp-linguine')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('saturday', 'dinner')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sunday -->
+        <div class="day-section">
+            <h2 class="day-title">SUNDAY</h2>
+            <div class="meals-grid">
+                <div class="meal-card">
+                    <div class="meal-image">🍳</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Sunday Veggie Omelet</div>
+                        <div class="meal-stats">380 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('veggie-omelet')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('sunday', 'breakfast')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🍲</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Hearty Lentil Soup</div>
+                        <div class="meal-stats">290 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('lentil-soup')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('sunday', 'lunch')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-card">
+                    <div class="meal-image">🍗</div>
+                    <div class="meal-content">
+                        <div class="meal-title">Herb Roasted Chicken</div>
+                        <div class="meal-stats">540 Cal Per Servings</div>
+                        <div class="meal-buttons">
+                            <button class="btn-view" onclick="viewRecipe('roasted-chicken')">View Recipe</button>
+                            <button class="btn-remove" onclick="removeMeal('sunday', 'dinner')">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <div class="logo-icon">☁</div>
+                    WEBSITE NAME
+                </div>
+                <p class="footer-description">
+                    Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Recipe Search</a></li>
+                    <li><a href="#">Meal Planning</a></li>
+                    <li><a href="#">Shopping Lists</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Email: example@gmail.com</a></li>
+                    <li><a href="#">Call: 0712 345 678</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 «Website Name». All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/meal-planner.js"></script>      
+</body>
+</html>

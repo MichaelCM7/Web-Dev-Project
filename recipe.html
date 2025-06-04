@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nutritious Recipes</title>
+    <link rel="stylesheet" href="css/recipe.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">☁</div>
+                WEBSITE NAME
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="goHome()">Home</a></li>
+                    <li><a href="#" class="active">Recipes</a></li>
+                    <li><a href="#" onclick="goAbout()">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
+                <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Explore Nutritious Recipes</h1>
+            <p>Discover recipes that suit your dietary preferences and nutritional goals.</p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <input type="text" class="search-input" placeholder="Search for recipes..." id="searchInput">
+            <select class="diet-filter" id="dietFilter">
+                <option value="">Diet Type</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="keto">Keto</option>
+                <option value="paleo">Paleo</option>
+                <option value="gluten-free">Gluten-Free</option>
+                <option value="low-carb">Low-Carb</option>
+            </select>
+        </section>
+
+        <!-- Recipes Grid -->
+        <section class="recipes-grid" id="recipesGrid">
+            <!-- Recipe cards will be generated here -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <div class="logo-icon">☁</div>
+                    WEBSITE NAME
+                </div>
+                <p class="footer-description">
+                    Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Recipe Search</a></li>
+                    <li><a href="#">Meal Planning</a></li>
+                    <li><a href="#">Shopping Lists</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Email: example@gmail.com</a></li>
+                    <li><a href="#">Call: 0715 340 778</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 «Website Name». All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/recipe.js">
+        
+    </script>
+</body>
+</html>

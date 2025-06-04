@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize Your Experience</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                WEBSITE NAME
+            </div>
+            <h1 class="quiz-title">Let's Personalize Your Experience</h1>
+            <p class="quiz-subtitle">Help us create the perfect meal plan just for you</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="step-indicator">
+                <div class="step-dot active"></div>
+                <div class="step-dot"></div>
+                <div class="step-dot"></div>
+                <div class="step-dot"></div>
+                <div class="step-dot"></div>
+                <div class="step-dot"></div>
+                <div class="step-dot"></div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <!-- Question 1: Goals -->
+            <div class="question active" data-question="1">
+                <h2 class="question-title">What's your main goal?</h2>
+                <p class="question-subtitle">Select your primary reason for wanting a meal plan</p>
+                
+                <div class="options-grid goals-grid">
+                    <div class="option" data-value="weight-loss">
+                        <span class="option-icon">⚖️</span>
+                        <div class="option-title">Weight Loss</div>
+                        <div class="option-description">Lose weight with healthy, balanced meals</div>
+                    </div>
+                    <div class="option" data-value="muscle-gain">
+                        <span class="option-icon">💪</span>
+                        <div class="option-title">Muscle Gain</div>
+                        <div class="option-description">Build muscle with protein-rich nutrition</div>
+                    </div>
+                    <div class="option" data-value="healthy-living">
+                        <span class="option-icon">🌱</span>
+                        <div class="option-title">Healthy Living</div>
+                        <div class="option-description">Maintain overall health and wellness</div>
+                    </div>
+                    <div class="option" data-value="save-time">
+                        <span class="option-icon">⏰</span>
+                        <div class="option-title">Save Time</div>
+                        <div class="option-description">Streamline meal planning and shopping</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2: Dietary Preferences -->
+            <div class="question" data-question="2">
+                <h2 class="question-title">Dietary Preferences</h2>
+                <p class="question-subtitle">What best describes your eating style?</p>
+                
+                <div class="options-grid diet-grid">
+                    <div class="option" data-value="omnivore">
+                        <span class="option-icon">🍖</span>
+                        <div class="option-title">Omnivore</div>
+                        <div class="option-description">Everything</div>
+                    </div>
+                    <div class="option" data-value="vegetarian">
+                        <span class="option-icon">🥬</span>
+                        <div class="option-title">Vegetarian</div>
+                        <div class="option-description">No meat</div>
+                    </div>
+                    <div class="option" data-value="vegan">
+                        <span class="option-icon">🌱</span>
+                        <div class="option-title">Vegan</div>
+                        <div class="option-description">Plant-based</div>
+                    </div>
+                    <div class="option" data-value="keto">
+                        <span class="option-icon">🥑</span>
+                        <div class="option-title">Keto</div>
+                        <div class="option-description">Low carb, high fat</div>
+                    </div>
+                    <div class="option" data-value="paleo">
+                        <span class="option-icon">🦴</span>
+                        <div class="option-title">Paleo</div>
+                        <div class="option-description">Whole foods</div>
+                    </div>
+                    <div class="option" data-value="mediterranean">
+                        <span class="option-icon">🫒</span>
+                        <div class="option-title">Mediterranean</div>
+                        <div class="option-description">Fish, olive oil</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3: Allergies -->
+            <div class="question" data-question="3">
+                <h2 class="question-title">Food Allergies & Restrictions</h2>
+                <p class="question-subtitle">Select all that apply to you</p>
+                <p class="multiple-select-info">You can select multiple options</p>
+                
+                <div class="options-grid">
+                    <div class="option checkbox-option" data-value="none">
+                        <div class="checkbox"></div>
+                        <div>
+                            <div class="option-title">No allergies or restrictions</div>
+                        </div>
+                    </div>
+                    <div class="option checkbox-option" data-value="nuts">
+                        <div class="checkbox"></div>
+                        <div>
+                            <div class="option-title">Tree nuts or peanuts</div>
+                        </div>
+                    </div>
+                    <div class="option checkbox-option" data-value="dairy">
+                        <div class="checkbox"></div>
+                        <div>
+                            <div class="option-title">Dairy/Lactose</div>
+                        </div>
+                    </div>
+                    <div class="option checkbox-option" data-value="gluten">
+                        <div class="checkbox"></div>
+                        <div>
+                            <div class="option-title">Gluten/Wheat</div>
+                        </div>
+                    </div>
+                    <div class="option checkbox-option" data-value="eggs">
+                        <div class="checkbox"></div>
+                        <div>
+                            <div class="option-title">Eggs</div>
+                        </div>
+                    </div>
+                    <div class="option checkbox-option" data-value="shellfish">
+                        <div class="checkbox"></div>
+                        <div>
+                            <div class="option-title">Shellfish</div>
+                        </div>
+                    </div>
+                    <div class="option checkbox-option" data-value="soy">
+                        <div class="checkbox"></div>
+                        <div>
+                            <div class="option-title">Soy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4: Activity Level -->
+            <div class="question" data-question="4">
+                <h2 class="question-title">Activity Level</h2>
+                <p class="question-subtitle">How active are you on a typical week?</p>
+                
+                <div class="options-grid activity-grid">
+                    <div class="option" data-value="sedentary">
+                        <span class="option-icon">🛋️</span>
+                        <div class="option-title">Sedentary</div>
+                        <div class="option-description">Little to no exercise, desk job</div>
+                    </div>
+                    <div class="option" data-value="lightly-active">
+                        <span class="option-icon">🚶</span>
+                        <div class="option-title">Lightly Active</div>
+                        <div class="option-description">Light exercise 1-3 days/week</div>
+                    </div>
+                    <div class="option" data-value="moderately-active">
+                        <span class="option-icon">🏃</span>
+                        <div class="option-title">Moderately Active</div>
+                        <div class="option-description">Moderate exercise 3-5 days/week</div>
+                    </div>
+                    <div class="option" data-value="very-active">
+                        <span class="option-icon">🏋️</span>
+                        <div class="option-title">Very Active</div>
+                        <div class="option-description">Hard exercise 6-7 days/week</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5: Cooking Experience -->
+            <div class="question" data-question="5">
+                <h2 class="question-title">Cooking Experience</h2>
+                <p class="question-subtitle">How comfortable are you in the kitchen?</p>
+                
+                <div class="options-grid activity-grid">
+                    <div class="option" data-value="beginner">
+                        <span class="option-icon">🥄</span>
+                        <div class="option-title">Beginner</div>
+                        <div class="option-description">Basic skills, simple recipes preferred</div>
+                    </div>
+                    <div class="option" data-value="intermediate">
+                        <span class="option-icon">👨‍🍳</span>
+                        <div class="option-title">Intermediate</div>
+                        <div class="option-description">Comfortable with most cooking techniques</div>
+                    </div>
+                    <div class="option" data-value="advanced">
+                        <span class="option-icon">👩‍🍳</span>
+                        <div class="option-title">Advanced</div>
+                        <div class="option-description">Love complex recipes and experimenting</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6: Household Size -->
+            <div class="question" data-question="6">
+                <h2 class="question-title">Household Information</h2>
+                <p class="question-subtitle">Help us size your meal plans correctly</p>
+                
+                <div class="input-group">
+                    <label class="input-label">How many people are you cooking for?</label>
+                    <input type="number" class="form-input" id="householdSize" min="1" max="10" value="1" placeholder="Number of people">
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">Any specific foods you dislike? (Optional)</label>
+                    <input type="text" class="form-input" id="dislikes" placeholder="e.g., mushrooms, spicy food, fish...">
+                </div>
+            </div>
+
+            <!-- Question 7: Budget -->
+            <div class="question" data-question="7">
+                <h2 class="question-title">Budget Preferences</h2>
+                <p class="question-subtitle">What's your typical weekly grocery budget per person?</p>
+                
+                <div class="options-grid activity-grid">
+                    <div class="option" data-value="budget">
+                        <span class="option-icon">💰</span>
+                        <div class="option-title">Budget-Friendly</div>
+                        <div class="option-description">$30-50 per person/week</div>
+                    </div>
+                    <div class="option" data-value="moderate">
+                        <span class="option-icon">💳</span>
+                        <div class="option-title">Moderate</div>
+                        <div class="option-description">$50-80 per person/week</div>
+                    </div>
+                    <div class="option" data-value="premium">
+                        <span class="option-icon">💎</span>
+                        <div class="option-title">Premium</div>
+                        <div class="option-description">$80+ per person/week</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button class="btn-back" id="backBtn" onclick="previousQuestion()" style="display: none;">← Previous</button>
+            <button class="btn-next" id="nextBtn" onclick="nextQuestion()" disabled>Next →</button>
+        </div>
+    </div>
+
+    <script src="js/quiz.js">
+    </script>
+</body>
+</html>
