@@ -12,20 +12,20 @@
         <div class="nav-container">
             <div class="logo">
                 <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
-                WEBSITE NAME
+                PLATE UP
             </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="/pages/HomePage_SignedIn.html" onclick="goHome()">Home</a></li>
                     <li><a href="/pages/recipe.html" onclick="goRecipes()">Recipes</a></li>
                     <li><a href="#" class="active">Meal Plans</a></li>
-                    <li><a href="#" onclick="goFavourites()">Favourites</a></li>
-                    <li><a href="#" onclick="goAbout()">About</a></li>
+                    <li><a href="/pages/favourites.html" onclick="goFavourites()">Favourites</a></li>
+                    <li><a href="/pages/AboutUs.html" onclick="goAbout()">About</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
-                <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+                <a href="/pages/index.html" class="btn-signin" onclick="showSignIn()">Log Out</a>
+                <a href="/pages/Profile.html" class="btn-started" onclick="getStarted()">Profile</a>
             </div>
         </div>
     </header>
@@ -35,7 +35,11 @@
         <!-- Page Header -->
         <div class="page-header">
             <h1>Weekly Meal Planner</h1>
-            <button class="shopping-list-btn" onclick="getShoppingList()">Get Shopping List</button>
+            <a href="/pages/shoppinglist.html">
+                <button class="shopping-list-btn" onclick="getShoppingList()">
+                    Get Shopping List
+                </button>
+            </a>
         </div>
 
         <!-- Monday -->
@@ -318,8 +322,8 @@
         <div class="footer-container">
             <div>
                 <div class="footer-brand">
-                    <img src="icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
-                    WEBSITE NAME
+                    <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                    PLATE UP
                 </div>
                 <p class="footer-description">
                     Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
@@ -328,9 +332,9 @@
             <div class="footer-section">
                 <h3>Features</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Recipe Search</a></li>
+                    <li><a href="/pages/recipe.html">Recipe Search</a></li>
                     <li><a href="#">Meal Planning</a></li>
-                    <li><a href="#">Shopping Lists</a></li>
+                    <li><a href="/pages/">Shopping Lists</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -342,7 +346,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 «Website Name». All rights reserved.</p>
+            <p>© 2025 «PLATE UP». All rights reserved.</p>
         </div>
     </footer>
 
