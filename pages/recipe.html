@@ -11,19 +11,19 @@
     <header class="header">
         <div class="nav-container">
             <div class="logo">
-                <img src="icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
                 PLATE UP
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" onclick="goHome()">Home</a></li>
+                    <li><a href="/pages/index.html" onclick="goHome()">Home</a></li>
                     <li><a href="#" class="active">Recipes</a></li>
-                    <li><a href="#" onclick="goAbout()">About</a></li>
+                    <li><a href="/pages/AboutUs.html" onclick="goAbout()">About</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
-                <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+                <a href="/pages/signin.html" class="btn-signin" onclick="showSignIn()">Sign In</a>
+                <a href="/pages/Sign-up.html" class="btn-started" onclick="getStarted()">Get Started</a>
             </div>
         </div>
     </header>
@@ -61,7 +61,7 @@
         <div class="footer-container">
             <div>
                 <div class="footer-brand">
-                    <img src="icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                    <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
                     PLATE UP
                 </div>
                 <p class="footer-description">
@@ -71,9 +71,15 @@
             <div class="footer-section">
                 <h3>Features</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Recipe Search</a></li>
-                    <li><a href="#">Meal Planning</a></li>
-                    <li><a href="#">Shopping Lists</a></li>
+                    <a style="text-decoration: none;color: #a0aec0;" href="/pages/recipe.html">
+                        <p>Recipe Search</p>
+                    </a>
+                    <a style="text-decoration: none;color: #a0aec0;" href="/pages/meal-planner.html">
+                        <p>Meal Planning</p>
+                    </a>
+                    <a style="text-decoration: none;color: #a0aec0;" href="/pages/shoppinglist.html">
+                        <p>Shopping Lists</p>
+                    </a>
                 </ul>
             </div>
             <div class="footer-section">
