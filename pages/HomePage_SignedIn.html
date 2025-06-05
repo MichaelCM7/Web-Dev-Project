@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home (Signed in)</title>
-    <link rel="stylesheet" href="styles/Home_S.css">
+    <link rel="stylesheet" href="/styles/Home_S.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <img src="icons/Logo.png" alt="Logo" class="logo-icon">
+                <img src="/icons/Logo.png" alt="Logo" class="logo-icon">
                 <span class="logo-text">WEBSITE NAME</span>
             </div>
             <nav class="nav-links">
                 <a href="#">Home</a>
-                <a href="#">Recipes</a>
-                <a href="#">Meal Plans</a>
-                <a href="#">Favourites</a>
-                <a href="#">About</a>
+                <a href="/pages/recipe.html">Recipes</a>
+                <a href="/pages/meal-planner.html">Meal Plans</a>
+                <a href="/pages/favourites.html">Favourites</a>
+                <a href="/pages/AboutUs.html">About</a>
             </nav>
             <div class="header-actions">
-                <button class="btn btn-logout">Log out</button>
-                <button class="btn btn-getstarted">Get Started</button>
+                <a href="/pages/index.html">
+                    <button class="btn btn-logout">Log out</button>
+                </a>
+                <a href="/pages/Profile.html">
+                    <button class="btn btn-getstarted">Profile</button>
+                </a>
             </div>
         </div>
     </header>
@@ -33,8 +37,10 @@
         <h1>Your Perfect Meal Plans <span class="highlight">Made Simple</span></h1>
         <p>Easily create personalized meal plans, smart shopping lists, and nutritious recipes—all in one seamless process.</p>
         <div class="hero-actions">
-            <input type="email" placeholder="Enter your email to get started">
-            <button class="btn btn-getstarted">Start Planning</button>
+            <!-- <input type="email" placeholder="Enter your email to get started"> -->
+            <a href="/pages/meal-planner.html">
+                <button class="btn btn-getstarted">Start Planning</button>
+            </a>
         </div>
     </section>
 
@@ -46,22 +52,22 @@
         </p>
         <div class="features">
             <div class="card highlighted">
-                <img src="icons/search-icon.png" alt="Search Icon" class="feature-icon">
+                <img src="/icons/search-icon.png" alt="Search Icon" class="feature-icon">
                 <h4>Smart Recipe Search</h4>
                 <p>Find recipes that match your dietary preferences and restrictions</p>
             </div>
             <div class="card">
-                <img src="icons/calendar-icon.png" alt="Calendar Icon" class="feature-icon">
+                <img src="/icons/calendar-icon.png" alt="Calendar Icon" class="feature-icon">
                 <h4>Meal planning</h4>
                 <p>Create personalized weekly meal plans with ease</p>
             </div>
             <div class="card">
-                <img src="icons/shopping-cart.png" alt="Shopping Cart" class="feature-icon">
+                <img src="/icons/shopping-cart.png" alt="Shopping Cart" class="feature-icon">
                 <h4>Auto Shopping Lists</h4>
                 <p>Generate organized shopping lists from your meal plans</p>
             </div>
             <div class="card">
-                <img src="icons/black heart.png" alt="Heart Icon" class="feature-icon">
+                <img src="/icons/black heart.png" alt="Heart Icon" class="feature-icon">
                 <h4>Favorite Recipes</h4>
                 <p>Save and organize your favorite healthy recipes</p>
             </div>
@@ -119,7 +125,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
-                <img src="icons/Logo.png" alt="Website Logo" class="logo-icon">
+                <img src="/icons/Logo.png" alt="Website Logo" class="logo-icon">
                 <span>WEBSITE NAME</span>
                 <p class="footer-description">
                     Simplifying healthy eating through personalized meal planning, smart recipe discovery, and organized shopping lists.
@@ -128,9 +134,15 @@
             <div class="footer-section">
                 <h4>Features</h4>
                 <ul class="footer-links">
-                    <li>Recipe Search</li>
-                    <li>Meal Planning</li>
-                    <li>Shopping Lists</li>
+                    <a style="text-decoration: none;color: #a0aec0;" href="/pages/recipe.html">
+                    <p>Recipe Search</p>
+                </a>
+                <a style="text-decoration: none;color: #a0aec0;" href="/pages/meal-planner.html">
+                    <p>Meal Planning</p>
+                </a>
+                <a style="text-decoration: none;color: #a0aec0;" href="/pages/shoppinglist.html">
+                    <p>Shopping Lists</p>
+                </a>
                 </ul>
             </div>
             <div class="footer-section">
