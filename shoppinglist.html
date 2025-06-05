@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/icons/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/shoppinglist.css">
+  <script defer src="/scripts/favourite.js"></script>
+  <title>Shopping List</title>
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        <div>
+          <img class="logo-icon" src="/icons/Logo.png" alt="">
+        </div>
+          WEBSITE NAME
+      </div>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="#" onclick="goHome()">Home</a></li>
+              <li><a href="#" onclick="goRecipes()">Recipes</a></li>
+              <li><a href="#" onclick="goMealPlans()">Meal Plans</a></li>
+              <li><a href="#" onclick="goFavourites()">Favourites</a></li>
+              <li><a href="#" onclick="goAbout()">About</a></li>
+          </ul>
+      </nav>
+      <div class="auth-buttons">
+          <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
+          <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div>
+      <p class="title">Shopping List</p>
+    </div>
+    <div class="ingredients-box">
+      <h3>Ingredients</h3>
+      <ul class="ingredients-list">
+        <li><span>Quinoa</span><span>1 bag</span></li>
+        <li><span>Cherry tomatoes</span><span>1 packet</span></li>
+        <li><span>Cucumber</span><span>1 piece</span></li>
+        <li><span>Red bell pepper</span><span>1 piece</span></li>
+        <li><span>Red onion</span><span>3 pieces</span></li>
+        <li><span>Feta cheese</span><span>1 packet</span></li>
+        <li><span>Kalamata olives</span><span>1 packet</span></li>
+        <li><span>Lemon Juice</span><span>1 bottle</span></li>
+        <li><span>Fresh parsley</span><span>1 bag</span></li>
+        <li><span>Olive oil</span><span>2 bottle</span></li>
+        <li><span>Tahini</span><span>1 bottle</span></li>
+        <li><span>Garlic</span><span>2 cloves</span></li>
+      </ul>
+    </div>
+    <div>
+      <a href="/meal-planner" class="back-button">Back to Meal Planner</a>
+    </div>
+  </main>
+  <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <img src="icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                    WEBSITE NAME
+                </div>
+                <p class="footer-description">
+                    Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Recipe Search</a></li>
+                    <li><a href="#">Meal Planning</a></li>
+                    <li><a href="#">Shopping Lists</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Email: example@gmail.com</a></li>
+                    <li><a href="#">Call: 0712 345 678</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 «Website Name». All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
