@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Favourite Recipes</title>
-    <link rel="stylesheet" href="css/favourites.css">
+    <link rel="stylesheet" href="/styles/favourites.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
             <div class="logo">
-                <img src="icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
                 WEBSITE NAME
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" onclick="goHome()">Home</a></li>
-                    <li><a href="#" onclick="goRecipes()">Recipes</a></li>
-                    <li><a href="#" onclick="goMealPlans()">Meal Plans</a></li>
+                    <li><a href="/pages/HomePage_SignedIn.html" onclick="goHome()">Home</a></li>
+                    <li><a href="/pages/recipe.html" onclick="goRecipes()">Recipes</a></li>
+                    <li><a href="/pages/meal-planner.html" onclick="goMealPlans()">Meal Plans</a></li>
                     <li><a href="#" class="active">Favourites</a></li>
-                    <li><a href="#" onclick="goAbout()">About</a></li>
+                    <li><a href="/pages/AboutUs.html" onclick="goAbout()">About</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="#" class="btn-signin" onclick="showSignIn()">Sign In</a>
-                <a href="#" class="btn-started" onclick="getStarted()">Get Started</a>
+                <a href="/pages/index" class="btn-signin" onclick="showSignIn()">Log Out</a>
+                <a href="/pages/Profile.html" class="btn-started" onclick="getStarted()">Profile</a>
             </div>
         </div>
     </header>
@@ -72,7 +72,7 @@
         <div class="footer-container">
             <div>
                 <div class="footer-brand">
-                    <img src="icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                    <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
                     WEBSITE NAME
                 </div>
                 <p class="footer-description">
@@ -82,9 +82,9 @@
             <div class="footer-section">
                 <h3>Features</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Recipe Search</a></li>
-                    <li><a href="#">Meal Planning</a></li>
-                    <li><a href="#">Shopping Lists</a></li>
+                    <li><a href="/pages/recipe.html">Recipe Search</a></li>
+                    <li><a href="/pages/meal-planner.html">Meal Planning</a></li>
+                    <li><a href="/pages/shoppinglist.html">Shopping Lists</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -100,7 +100,7 @@
         </div>
     </footer>
 
-    <script src="js/favourites.js"></script>
+    <script src="/scripts/favourites.js"></script>
 
 </body>
 </html>

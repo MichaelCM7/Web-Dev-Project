@@ -163,6 +163,7 @@
         }
 
         // Navigation functions
+        /*
         function showSignIn() {
             alert('Redirecting to Sign In page...');
         }
@@ -186,6 +187,7 @@
         function goAbout() {
             alert('Redirecting to About page...');
         }
+        */
 
         // Add CSS animation for notifications
         const style = document.createElement('style');
