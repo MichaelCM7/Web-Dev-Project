@@ -9,37 +9,35 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="header-container">
+     <header class="header">
+        <div class="nav-container">
             <div class="logo">
-                <img src="/icons/Logo.png" alt="Logo" class="logo-icon">
-                <span class="logo-text">PLATE UP</span>
+                <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                PLATE UP
             </div>
-            <nav class="nav-links">
-                <a href="#" class="active">Home</a>
-                <a href="/pages/recipe.html">Recipes</a>
-                <a href="/pages/AboutUs.html">About</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/pages/index.html" class="active">Home</a></li>
+                    <li><a href="/pages/recipe.html">Recipes</a></li>
+                    <li><a href="/pages/AboutUs.html">About</a></li>
+                </ul>
             </nav>
-            <div class="header-actions">
-                <a href="/pages/signin.html">
-                    <button class="btn btn-signin">Sign In</button>
-                </a>
-                <a href="/pages/Sign-up.html">
-                    <button class="btn btn-getstarted">Get Started</button>
-                </a>
-                
+            <div class="auth-buttons">
+                <a href="/pages/signin.html" class="btn-signin">Sign In</a>
+                <a href="/pages/Sign-up.html" class="btn-started">Get Started</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Your Perfect Meal Plans <span class="highlight">Made Simple</span></h1>
+        <h1 style="margin-bottom: 0px;">Your Perfect Meal Plans </h1>
+        <h1><span class="highlight">Made Simple</span></h1>
         <p>Easily create personalized meal plans, smart shopping lists, and nutritious recipes—all in one seamless process.</p>
         <div class="hero-actions">
             <input type="email" placeholder="Enter your email to get started">
             <a style="margin: 0;padding: 0;" href="/pages/Sign-up.html">
-                <button style="height: 100%;" class="btn btn-getstarted">Start Planning</button>
+                <button style="height: 100%;" class="btn-getstarted">Start Planning</button>
             </a>
         </div>
     </section>
@@ -123,18 +121,19 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-main">
-            <div class="footer-logo">
-                <div class="logo">
-                    <img src="/icons/Logo.png" alt="Website Logo" style="height:28px; vertical-align:middle;">
-                    <span style="color:#28e28b;">PLATE UP</span>
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                    PLATE UP
                 </div>
-                <p>Simplifying healthy eating through<br>
-                personalized meal planning, smart recipe<br>
-                discovery, and organized shopping lists.</p>
+                <p class="footer-description">
+                    Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
+                </p>
             </div>
-            <div class="footer-features">
-                <h4>Features</h4>
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
                     <a style="text-decoration: none;color: #a0aec0;" href="/pages/recipe.html">
                         <p>Recipe Search</p>
                     </a>
@@ -144,14 +143,19 @@
                     <a style="text-decoration: none;color: #a0aec0;" href="/pages/signin.html">
                         <p>Shopping Lists</p>
                     </a>
+                </ul>
             </div>
-            <div class="footer-support">
-                <h4>Support</h4>
-                <p>Email : example@gmail.com</p>
-                <p>Call : 0712 345 278</p>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Email: example@gmail.com</a></li>
+                    <li><a href="#">Call: 0715 340 778</a></li>
+                </ul>
             </div>
         </div>
-        <p class="footer-copy">© 2025 &lt;PLATE UP&gt;. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>© 2025 Plate Up. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
