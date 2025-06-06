@@ -23,7 +23,7 @@
                 <p>Sign in to your account</p>
             </div>
 
-            <form id="signinForm">
+            <form id="signinForm" onsubmit="signIn()">
                 <div class="form-group">
                     <label for="email">Email Address</label>
                     <div class="input-wrapper">
@@ -55,11 +55,9 @@
                     <a href="#" onclick="showForgotPassword()">Forgot your password?</a>
                 </div>
 
-                <a href="/pages/quiz.html">
-                    <button type="submit" class="signin-btn">
-                        Sign In
-                    </button>
-                </a>
+                <button type="submit" class="signin-btn">
+                    Sign In
+                </button>
             </form>
 
             <div class="divider">

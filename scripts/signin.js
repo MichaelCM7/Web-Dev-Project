@@ -32,11 +32,12 @@
                 btn.style.animation = 'successPulse 0.5s ease';
                 
                 setTimeout(() => {
-                    alert('Sign in functionality would be implemented here!');
+                    // alert('Sign in functionality would be implemented here!');
                     btn.textContent = originalText;
                     btn.style.background = 'linear-gradient(135deg, #00D2A0, #40E0D0)';
                     btn.style.animation = '';
                     ripple.remove();
+                    window.location.href = '/pages/HomePage_SignedIn.html';
                 }, 1500);
             }, 2000);
         });
