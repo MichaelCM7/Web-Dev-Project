@@ -205,6 +205,7 @@ let currentQuestion = 1;
                     console.log('Quiz completed with answers:', answers);
                 }, 1000);
             }, 2000);
+            document.location.href='/pages/HomePage_SignedIn.html';
         }
 
         // Add floating particles effect
