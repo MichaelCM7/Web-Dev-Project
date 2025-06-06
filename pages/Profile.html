@@ -10,31 +10,23 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header-container">
+        <div class="nav-container">
             <div class="logo">
-                <img src="/icons/Logo.png" alt="Logo" class="logo-icon">
-                <span class="logo-text">PLATE UP</span>
+                <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                PLATE UP
             </div>
-            <nav class="nav-links">
-                <a href="/pages/HomePage_SignedIn.html">Home</a>
-                <a href="/pages/recipe-S.html">Recipes</a>
-                <a href="/pages/meal-planner.html">Meal Plans</a>
-                <a href="/pages/favourites.html">Favourites</a>
-                <a href="/pages/Profile.html">Profile</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="/pages/recipe-S.html">Recipes</a></li>
+                    <a href="/pages/meal-planner.html">Meal Plans</a>
+                    <a href="/pages/favourites.html">Favourites</a>
+                    <li><a href="/pages/AboutUs-S.html">About</a></li>
+                </ul>
             </nav>
-            <div class="header-actions">
-                <a href="/pages/index.html">
-                    <button class="btn btn-logout">
-                        Log out
-                    </button>
-                </a>
-                <a href="/pages/Profile.html">
-                    <button class="btn btn-getstarted">
-                        Profile
-                    </button>
-                </a>
-                
-                
+            <div class="auth-buttons">
+                <a href="/pages/index.html" class="btn-signin">Log Out</a>
+                <a href="/pages/Profile.html" class="btn-started">Profile</a>
             </div>
         </div>
     </header>
@@ -74,15 +66,17 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-brand">
-                <img src="/icons/Logo.png" alt="Website Logo" class="logo-icon">
-                <span>PLATE UP</span>
+            <div>
+                <div class="footer-brand">
+                    <img src="/icons/Logo.png" alt="Logo" class="logo-img" style="height:38px; width:38px;">
+                    PLATE UP
+                </div>
                 <p class="footer-description">
-                    Simplifying healthy eating through personalized meal planning, smart recipe discovery, and organized shopping lists.
+                    Simplify your healthy eating through personalized meal planning, nutritious recipe discovery, and organized shopping lists.
                 </p>
             </div>
             <div class="footer-section">
-                <h4>Features</h4>
+                <h3>Features</h3>
                 <ul class="footer-links">
                     <a style="text-decoration: none;color: #a0aec0;" href="/pages/recipe-S.html">
                         <p>Recipe Search</p>
@@ -96,15 +90,15 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Support</h4>
+                <h3>Support</h3>
                 <ul class="footer-links">
-                    <li>Email: example@gmail.com</li>
-                    <li>Call: 0712 345 278</li>
+                    <li><a href="#">Email: example@gmail.com</a></li>
+                    <li><a href="#">Call: 0715 340 778</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            © 2025 &lt;PLATE UP&gt;. All rights reserved.
+            <p>© 2025 Plate Up. All rights reserved.</p>
         </div>
     </footer>
 </body>
