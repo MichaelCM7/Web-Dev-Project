@@ -17,7 +17,7 @@
         
         <h1>SIGN UP</h1>
         
-        <form id="signupForm">
+        <form id="signupForm" onsubmit="document.location.href='/pages/quiz.html'">
             <div class="form-row">
                 <div class="form-group">
                     <label for="firstName">First Name</label>
@@ -48,9 +48,8 @@
                 </div>
             </div>
             
-            <a href="/pages/quiz.html">
-                <button type="submit" class="btn btn-primary">Create Account</button>
-            </a>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            
         </form>
         
         <div class="social-buttons">
