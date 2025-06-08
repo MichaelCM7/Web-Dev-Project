@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  height: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +16,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  overflow-y: auto;
+  position:relative;
+  overflow-x: hidden;
 }
 
 body::before {
